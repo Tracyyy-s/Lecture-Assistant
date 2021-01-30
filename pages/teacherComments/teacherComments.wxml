@@ -1,0 +1,9 @@
+<view class="hot">
+  <text>热门评论</text>
+</view>
+<view class="comment" wx:for="{{commentList}}" wx:for-index="index" wx:key='key'>
+  <view class="name">{{item.NickName}}</view>
+  <view class="time">{{item.time}}</view>
+  <view class="goodNumber" wx:if="{{item.goodNumber}}">{{item.goodNumber}}🔥</view>
+    <view>{{item.content}}</view>
+</view>

@@ -1,0 +1,29 @@
+<image src="../../images/add.png" class='image' bindtap="addLecture"></image>
+
+<view class="lectures" wx:for="{{myLectures}}" wx:key="key">
+  <view class="tittle">
+    <image class="imageJoin" src="../../images/join.png"></image>
+    <text>{{item.title}}</text>
+  </view>
+  <!-- <view class="authorID"><text>{{item.authorID}}</text></view> -->
+  <view><text class="author">{{item.author}}</text></view>
+  <!-- <view>
+    <image class="imageTime" src="../../images/time.png"></image>
+    <text class="time">{{item.time}}</text>
+  </view> -->
+  <view>
+    <image class="imagePos" src="../../images/location.png"></image>
+    <text class="pos">{{item.address}}</text>
+  </view>
+  <button class="comment" bindtap="getcomments" data-lectureid="{{item._id}}">评论列表</button>
+  <button class="qiandao" bindtap="qiandao" data-available="{{item.available}}" data-lectureid="{{item._id}}" wx:if="{{item.lecturetype == 'unjoinLecture'}}">签到/结束</button>
+  <button class="qiandao" bindtap="checkSignedList" data-lectureid="{{item._id}}" wx:if="{{item.lecturetype == 'joinedLecture'}}">签到列表</button>
+</view>
+
+<view wx:for="{{signedList}}" wx:key="key">
+  <view>
+    <text>{{item.userID}}</text>
+    <text>{{item.NickName}}</text>
+    <text>{{item.time}}</text>
+  </view>
+</view>

@@ -1,0 +1,76 @@
+.tittle {
+  top: 20rpx;
+  text-align: center;
+  width: 100%;
+  height: 110rpx;
+  font-size:45rpx;
+  position: relative;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+  border-radius: 100rpx;
+  font-weight: 500;
+  line-height: 90rpx;
+}
+.questionBox {
+  display: flex;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin: 2px;
+  padding: 5px;
+  border: 2px;
+  text-align: left;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  position: relative;
+  top: 50rpx;
+  width: 100%;
+  background: #fff4eb;
+  font-size: 30rpx;
+  color: #ff7200;
+  border-bottom: 1px solid #ff7200;
+}
+.good {
+  height: 45rpx;
+  width: 45rpx;
+  position: relative;
+  left: 680rpx;
+  top: 0rpx;
+}
+
+.goodNumber {
+  display:flex;
+  height: 20rpx;
+  width: 60rpx;
+  position: absolute;
+  left: 675rpx;
+  top: 0rpx;
+  border-right: 2px;
+  padding: 2px;
+  margin: 2px;
+  float: right;
+}
+.name {
+  font-size: 16px;
+  border-right: 2px;
+  padding: 2px;
+  width: 300px;
+}
+
+.time {
+  font-size: 13px;
+  border: 1px;
+  padding: 1px;
+  margin: 2px;
+  width: 180px;
+}
+
+.noQuestion {
+  margin: 20px;
+  margin-top: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  color:#ff7200
+}

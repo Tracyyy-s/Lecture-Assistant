@@ -1,0 +1,22 @@
+<!--pages/map/map.wxml-->
+ <button bindtap="setDisabled" bindtap="uplocation">上传位置</button>
+<!-- 这是地图部分 -->
+ 
+<view class="map_container">
+  <map class='map' longitude='{{longitude}}' latitude='{{latitude}}' scale='{{scale}}' markers='{{markers}}' controls="{{controls}}" bindcontroltap="bindcontroltap" polyline='{{polyline}}' circles="{{circles}}" bindmarkertap='bindmarkertap' bindcontroltap='bindcontroltap'
+    show-location></map>
+</view>
+ 
+ 
+<!-- 以下是导航部分 -->
+ 
+<view class='list-guide'>
+
+  <view bindtap="onGuideTap" data-latitude='30.614576389' data-longitude='104.120306968' data-bankName='查询讲座位置'>
+    <text class='list-guide-text'>详情</text>
+  </view>
+  <view bindtap='onbankTap' data-bankId="{{item.BANK_ID}}">
+   
+  </view>
+ 
+</view>

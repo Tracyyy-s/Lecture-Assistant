@@ -1,0 +1,49 @@
+<view class="unjoin">未开始的讲座</view>
+<view class='unjoinLecture' wx:for='{{unjoinLec}}' wx:key='key'>
+  <image src='../../images/unjoin.png' class='image'></image>
+  <text class="tittle">{{item.title}}</text>
+  <view>
+    <text class="author">{{item.author}}\n\n</text>
+  </view>
+  <view>
+    <button class="ask" bindtap="wantToAsk" data-lecturetype="{{item.lecturetype}}" data-index='{{index}}' data-id='{{item._id}}' >进入讲座</button>
+    <button class="files" bindtap="download_File" data-fileid="{{item.fileID}}" data-lecturetype="{{item.lecturetype}}">资料下载</button>
+  </view>
+  <view>
+    <image src="../../images/time.png" class="imageDate"></image>
+    <text class="date">{{item.date}}</text>
+  </view>
+  <view>
+    <image src="../../images/pos.png" class="imagePos"></image>
+    <text class="pos">{{item.address}}</text>
+  </view>
+</view>
+
+<view wx:if="{{!haveUnjoin}}">
+  <text class="noLecture">空空如也 :(</text>
+</view>
+
+<view class="join">已结束的讲座</view>
+<view class="joinLecture" wx:for='{{joinedLec}}' wx:key='key'>
+  <image src='../../images/join.png' class='image'></image>
+  <text class="tittle">{{item.title}}</text>
+  <view>
+    <text class="author">{{item.author}}\n\n</text>
+  </view>
+  <view>
+    <button class="ask" bindtap="wantToAsk" data-lecturetype='{{item.lecturetype}}' data-index='{{index}}' data-id='{{item._id}}'>查看详情</button>
+    <button class="files" bindtap="download_File" data-fileid="{{item.fileID}}" data-lecturetype="{{item.lecturetype}}">资料下载</button>
+  </view>
+  <view>
+    <image src="../../images/time.png" class="imageDate"></image>
+    <text class="date">{{item.date}}</text>
+  </view>
+  <view>
+    <image src="../../images/pos.png" class="imagePos"></image>
+    <text class="pos">{{item.address}}</text>
+  </view>
+</view>
+
+<view wx:if="{{!haveJoined}}">
+  <text class="noLecture">空空如也 :(</text>
+</view>

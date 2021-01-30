@@ -1,0 +1,25 @@
+<view>
+  <image class="img" src="../../images/book.png"></image>
+</view>
+<view class="tittle">讲座小助手</view>
+<view>
+  <view class="ID">
+    <view class="input">学号/工号</view>
+    <view>
+      <view>
+        <input class="input" maxlength="10" bindinput="IDInput"/>
+      </view>
+    </view>
+  </view>
+  <view class="password">
+    <view>密码</view>
+    <view>
+      <view>
+        <input class="password-input" password type="text" bindinput="passwordInput" />
+      </view>
+    </view>
+  </view>
+</view>
+<view>
+  <button class="submit" type="submit" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">登录</button>
+</view>

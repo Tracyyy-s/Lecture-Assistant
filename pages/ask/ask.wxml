@@ -1,0 +1,41 @@
+<view class='showmine'>
+  <button class="allComment" bindtap='all'>全部评论</button>
+  <button class="signup" bindtap='tosign'>签到</button>
+  <button class="myQuestion" bindtap='mine'>发起提问</button>
+  <button class="takePhotos" bindtap="getImage">拍照</button>
+</view>
+
+<view wx:if="{{!ismine}}">
+  <view class="hot">
+    <text>热门评论</text>
+  </view>
+  <view class="comment" wx:for="{{commentList}}" wx:for-index="index" wx:key='key'>
+    <view class="name">{{item.NickName}}</view>
+    <view class="time">{{item.time}}</view>
+    <view class="goodNumber" wx:if="{{item.goodNumber}}">{{item.goodNumber}}</view>
+      <image catchtap="change" src="{{item.url}}" class="good" data-commentid='{{item.commentID}}' data-index='{{index}}'>
+  mode="aspectFill"    </image>
+      <view>{{item.content}}</view>
+  </view>
+</view>
+
+<view wx:if="{{ismine}}">
+  <view class="comment" wx:for="{{myComments}}" wx:for-index="index" wx:key='key'>
+    <view class="name">{{item.NickName}}</view>
+    <view class="time">{{item.time}}</view>
+    <view class="goodNumber" wx:if="{{item.goodNumber}}">{{item.goodNumber}}🔥</view>
+    <image catchtap="change" src="{{item.url}}" class="good" data-commentid='{{item.commentID}}' data-index='{{index}}'>
+  mode="aspectFill"    </image>
+    <view>{{item.content}}</view>
+  </view>
+  <view class="ask">
+  <text>发起提问</text>
+  </view>
+  <view class="input">
+  <textarea class="inputBox" bindinput="questionInput" maxlength="140" value="{{value}}"></textarea>
+  </view>
+
+  <view>
+    <button class="submit" type="submit" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="handIn">提交</button>
+  </view>
+</view>

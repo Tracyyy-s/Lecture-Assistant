@@ -1,0 +1,79 @@
+.image {
+  height: 70rpx;
+  width: 70rpx;
+  margin-top: 20rpx
+}
+.imageJoin {
+  height: 70rpx;
+  width: 70rpx;
+  margin-top: 20rpx;
+}
+imageTime {
+  position: relative;
+  height: 70rpx;
+  width: 70rpx;
+  top: 160rpx;
+  left: 180rpx;
+  float: left;
+}
+.imagePos {
+  position: relative;
+  height: 70rpx;
+  width: 70rpx;
+  top: 160rpx;
+  right: 265rpx;
+  float: right;
+}
+.lectures {
+  position: relative;
+  height: 380rpx;
+  width: 100%;
+  margin-top: 60rpx;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+}
+.tittle {
+  position: relative;
+  text-align: justify;
+  font-size: 38rpx;
+  left: 20rpx;
+  color: #ff7200;
+}
+.author {
+  position: relative;
+  text-align: justify;
+  font-size: 35rpx;
+  color: #ff7200;
+  left: 80rpx;
+  top: 70rpx;
+}
+.pos {
+  font-size: 33rpx;
+  position: relative;
+  text-align: justify;
+  top: 180rpx;
+  float: right;
+}
+.comment {
+  position: relative;
+  background-color: #ff7200;
+  color: #fff4eb;
+  font-size: 33rpx;
+  border-radius: 100rpx;
+  height: 80rpx;
+  width: 200rpx;
+  left: 250rpx;
+  float: left;
+}
+.qiandao {
+  position: relative;
+  background-color: #ff7200;
+  color: #fff4eb;
+  font-size: 33rpx;
+  border-radius: 100rpx;
+  height: 80rpx;
+  width: 200rpx;
+  left: 170rpx;
+  float: right;
+}

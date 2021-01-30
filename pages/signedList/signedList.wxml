@@ -1,0 +1,16 @@
+<button bindtap="cancelsign" wx:if="{{!over}}">停止签到</button>
+<view class="list">
+<text>已经签到的同学</text>
+</view>
+<view class='listbar'>
+  <text>学号</text>
+  <text>昵称</text>
+  <text>时间</text>
+</view>
+<view wx:for="{{signedList}}" wx:key="key">
+  <view class="showList">
+    <text>{{item.userID}}</text>
+    <text>{{item.NickName}}</text>
+    <text>{{item.time}}</text>
+  </view>
+</view>

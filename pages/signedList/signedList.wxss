@@ -1,0 +1,25 @@
+/* pages/signedList/signedList.wxss */
+.list {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff4eb;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.listbar{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12pt;
+  margin-left: 10px;
+  margin-right: 60px;
+  margin-top: 5px;
+}
+.showList{
+  justify-content: space-between;
+  display: flex;
+  font-size: 10pt;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}

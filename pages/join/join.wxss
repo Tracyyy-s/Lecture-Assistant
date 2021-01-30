@@ -1,0 +1,128 @@
+.unjoin {
+  position: relative;
+  text-align: center;
+  height: 80rpx;
+  width: 600rpx;
+  font-size: 45rpx;
+  top: 30rpx;
+  left: 80rpx;
+  background: #fff4eb;
+  color: #ff7200;
+  border-radius: 100rpx;
+  border-color: #ff7200;
+}
+.unjoinLecture {
+  position: relative;
+  height: 380rpx;
+  width: 100%;
+  margin-top: 60rpx;
+  background: #fff4eb;
+  color: #ff7200;
+  border-color: #ff7200;
+}
+.join {
+  position: relative;
+  text-align: center;
+  height: 80rpx;
+  width: 600rpx;
+  font-size: 45rpx;
+  margin-top: 150rpx;
+  left: 80rpx;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+  border-radius: 100rpx;
+}
+.tittle {
+  position: relative;
+  text-align: justify;
+  font-size: 40rpx;
+  color: #ff7200;
+  left: 10rpx;
+}
+.joinLecture {
+  position: relative;
+  height: 380rpx;
+  width: 100%;
+  margin-top: 60rpx;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+}
+.image {
+  height: 70rpx;
+  width: 70rpx;
+  top: 20rpx;
+}
+.author {
+  position: relative;
+  text-align: justify;
+  font-size: 35rpx;
+  color: #ff7200;
+  left: 80rpx;
+  top: 60rpx;
+  /* float: left; */
+}
+.imageDate {
+  position: relative;
+  height: 70rpx;
+  width: 70rpx;
+  top: 120rpx;
+  right: 180rpx;
+  float: left;
+}
+.imagePos {
+  position: relative;
+  height: 70rpx;
+  width: 70rpx;
+  top: 120rpx;
+  right: 50rpx;
+  float: right;
+}
+.date {
+  position: relative;
+  text-align: justify;
+  font-size: 33rpx;
+  top: 130rpx;
+  right: 160rpx;
+  float: left;
+}
+.pos {
+  position: relative;
+  text-align: justify;
+  font-size: 33rpx;
+  top: 100rpx;
+  left: 230rpx;
+  float: right;
+}
+.ask {
+  position: relative;
+  background-color: #ff7200;
+  color: #fff4eb;
+  font-size: 33rpx;
+  border-radius: 100rpx;
+  height: 80rpx;
+  width: 200rpx;
+  left: 240rpx;
+  float: left;
+}
+.files {
+  position: relative;
+  background-color: #ff7200;
+  color: #fff4eb;
+  font-size: 33rpx;
+  border-radius: 100rpx;
+  height: 80rpx;
+  width: 200rpx;
+  right: 20rpx;
+  float: right;
+}
+
+.noLecture {
+  margin: 20px;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  color:#ff7200
+}

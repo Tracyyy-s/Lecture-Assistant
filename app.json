@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/homePage/homePage",
+    "pages/join/join",
+    "pages/myAsk/myAsk",
+    "pages/ask/ask",
+    "pages/set/set",
+    "pages/addLecture/addLecture",
+    "pages/teacherPage/teacherPage",
+    "pages/signedList/signedList",
+    "pages/teacherComments/teacherComments",
+    "pages/myLocation/myLocation",
+    "pages/suggest/suggest",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ff7200",
+    "navigationBarTitleText": "校园讲座小助手",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#ff7200",
+    "backgroundColor": "#fff4eb",
+    "list": [
+      {
+        "pagePath": "pages/homePage/homePage",
+        "text": "我的主页",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/mySelect.png"
+      },
+      {
+        "pagePath": "pages/join/join",
+        "text": "我的讲座",
+        "iconPath": "images/lecture.png",
+        "selectedIconPath": "images/lectureSelect.png"
+      },
+      {
+        "pagePath": "pages/myAsk/myAsk",
+        "text": "我的提问",
+        "iconPath": "images/ask.png",
+        "selectedIconPath": "images/askSelect.png"
+      },
+      {
+        "pagePath": "pages/set/set",
+        "text": "设置",
+        "iconPath": "images/set.png",
+        "selectedIconPath": "images/setSelect.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap60.json"
+}

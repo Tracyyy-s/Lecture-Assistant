@@ -1,0 +1,11 @@
+<view>
+  <view class="tubiao" bindlongtap='mysterious'>
+    <image class="png" src="../../images/sicnu.jpg"></image>
+  </view>
+  <view class="statement">
+    <text>校园讲座小助手</text>
+  </view>
+  <view class="contact">
+    <text>联系方式：</text>
+  </view>
+</view>

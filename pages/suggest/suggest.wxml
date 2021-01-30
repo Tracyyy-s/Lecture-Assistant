@@ -1,0 +1,28 @@
+<view class='heiheihei1'>
+<image  src='../../images/bear.jpg'></image>
+</view>
+<view class="conts">
+  <form bindsubmit="bindFormSubmit">
+    <textarea class="areas" bindinput="contentInput" placeholder='{{placeholder}}' maxlength="{{maxlength}}" name="textarea" value='{{value}}'>
+      <text class="currentWordNumber">{{currentWordNumber|0}}/{{maxlength}}</text>
+    </textarea>
+    <button class="btn_style" form-type="submit" bindtap="showDialogBtn">提交</button>
+  </form>
+</view>
+<view class='heiheihei'>
+<image  src='../../images/bear1.jpg'></image>
+</view>
+
+<!-- 弹窗 -->
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">提交</view>
+    <view class="modal-content">
+    <text decode="true" class="input">确定提交反馈意见吗？</text>
+    
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+  </view>

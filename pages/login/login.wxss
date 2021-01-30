@@ -1,0 +1,48 @@
+.img {
+  padding-left:230rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  width: 300rpx;
+  height: 300rpx;
+}
+.tittle {
+  padding-top: 35rpx;
+  font-size: 50rpx;
+  text-align: center;
+  color: #ff7200;
+}
+.ID {
+  text-align: center;
+  width: 600rpx;
+  font-size:40rpx;
+  margin-top: 100rpx;
+  margin-left: 80rpx;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+  border-radius: 100rpx;
+}
+.password {
+  text-align: center;
+  width: 600rpx;
+  font-size:40rpx;
+  margin-top: 110rpx;
+  margin-left: 80rpx;
+  bottom: 10rpx;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+  border-radius: 100rpx;
+}
+.submit {
+  text-align: center;
+  font-size:40rpx;
+  margin-top: 200rpx;
+  float: center;
+  background-color: #ff7200;
+  color: #fff;
+  height: 100rpx;
+  width: 230rpx;
+  border-radius: 40rpx;
+  box-shadow:0 0 40rpx rgba(255, 144, 0, .2);
+}

@@ -1,0 +1,13 @@
+<view class="tittle">我的历史提问</view>
+<view class="questionBox" wx:for="{{myComments}}">
+  <view class="name">{{item.NickName}}</view>
+  <view class="time">{{item.time}}</view>
+  <view class="goodNumber" wx:if="{{item.goodNumber}}">{{item.goodNumber}}</view>
+  <image catchtap="change" src="{{item.url}}" class="good" data-commentid='{{item.commentID}}' data-lectureid='{{item.lectureID}}' data-index='{{index}}'>
+  </image>
+  <view>{{item.content}}</view>
+</view>
+
+<view class="noQuestion" wx:if="{{!haveQuestion}}">
+  <text>什么都没有留下 :(</text>
+</view>

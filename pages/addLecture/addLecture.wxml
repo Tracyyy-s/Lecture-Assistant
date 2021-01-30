@@ -1,0 +1,22 @@
+<view class="tit">提交讲座</view>
+<view class="bg">
+  <view class="sub-tittle">讲座名称</view>
+  <input type="text" bindinput="titleInput" class="sub-tit"></input>
+  <view class="sub-tittle">讲师姓名</view>
+  <input type="text" bindinput="authorInput" class="sub-tit"></input>
+  <view class="sub-tittle">讲座地点</view>
+  <input type="text" bindinput="addressInput" class="sub-tit"></input>
+  <view class="sub-tittle">讲座时间
+    <view class="p_type1">
+      <picker mode="date" value="{{dateValue}}" start="{{tomorrow}}" end="2999-12-12" bindchange="datePickerBindchange">
+      {{dateValue}}
+      </picker>
+    </view>
+</view>
+  <view class="sub-detail">讲座简介</view>
+  <textarea bindinput="introductionInput" wx:if="{{!showModel}}"placeholder="简单介绍一下讲座" id="detail" class="simple-introduction"></textarea>
+  <button class="up" bindtap="uploadFiles">上传文件</button>
+  <view class="detail">温馨提示🚩：请从聊天记录中选择文件，仅支持.doc,.ppt,.pdf,.xlsx,jpg,.png格式。</view>
+  <view class="p_type1"><button wx:if="{{chooseFile}}"><image class="image_frame" src="{{url}}" wx:if="{{chooseFile}}"></image></button></view>
+  <button class="up" bindtap="showDialogBtn">发表</button>
+</view>

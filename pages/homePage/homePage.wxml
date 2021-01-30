@@ -1,0 +1,26 @@
+
+<view class="tittle">近期讲座</view>
+<view wx:for='{{lectures}}' wx:key='key'>
+  <view class="lecture">
+  <image src="../../images/unjoin.png" class="image"></image>
+  <text class="lectureTittle">{{item.title}}</text>
+  <view>
+    <text class="author">{{item.author}}\n\n</text>
+  </view>
+  <view>
+    <button class="detail" bindtap="showDetail" data-index="{{index}}">简介</button>
+    <button class="join" bindtap="join" data-lectureid="{{item._id}}" data-lecturetype="{{item.lecturetype}}" data-title="{{item.title}}">报名</button>
+  </view>
+  <view>
+    <image src="../../images/time.png" class="imageDate"></image>
+    <text class="date">{{item.date}}</text>
+  </view>
+  <view>
+    <image src="../../images/pos.png" class="imagePos"></image>
+    <text class="pos">{{item.address}}</text>
+  </view>
+</view>
+<view>
+    <text wx-if="{{item.isOnShowDetail}}" >{{item.introduction}}</text>
+  </view>
+</view>

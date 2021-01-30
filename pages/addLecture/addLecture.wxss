@@ -1,0 +1,102 @@
+.bg {
+  position: relative;
+  height: 800rpx;
+  width: 100%;
+  margin-top: 60rpx;
+  border-color: #ff7200;
+  /* background: #fff4eb; */
+  color: #ff7200;
+  font-size: 33rpx;
+}
+.sub-tittle {
+  position: relative;
+  text-align: justify;
+  margin-top: 20rpx;
+  left: 310rpx;
+}
+.tit {
+  position: relative;
+  text-align: center;
+  height: 80rpx;
+  width: 600rpx;
+  font-size: 45rpx;
+  top: 20rpx;
+  left: 80rpx;
+  border-color: #ff7200;
+  background: #fff4eb;
+  color: #ff7200;
+  border-radius: 100rpx;
+}
+.sub-tit {
+  position: relative;
+  text-align: center;
+  color: #ff7200;
+  border-radius: 100rpx;
+  border: 3rpx #ff7200 solid;
+  left: 120rpx;
+  height: 60rpx;
+  width: 500rpx;
+}
+.sub-detail {
+  position: relative;
+  text-align: center;
+  color: #ff7200;
+  border-radius: 100rpx;
+  border: 3rpx #ff7200 solid;
+  margin-top: 100rpx;
+  height: 60rpx;
+  width: 500rpx;
+  left: 120rpx;
+}
+.simple-introduction {
+  /* position: relative;
+  vertical-align:middle;
+  margin-top: 100rpx;
+  border: 3rpx #ff7200 solid;
+  left: 65rpx; */
+  border: 3rpx #ff7200 solid;
+  margin-top: 30rpx;
+  width: 100%;
+  overflow: auto;
+  word-break: break-all; /*解决兼容问题*/
+}
+.up {
+  position: relative;
+  text-align: center;
+  color: #ff7200;
+  top: 30rpx;
+  left: 5rpx;
+  width: 500rpx;
+  background-color: #fff4eb;
+  border: 5rpx #ff7200 solid;
+  border-radius: 100rpx;
+}
+.detail {
+  position: relative;
+  text-align: center;
+  top: 30rpx;
+  margin: 3px;
+}
+.show-btn {
+  margin-top: 100rpx;
+  color: #22cc22;
+}
+
+
+.p_type1{
+  margin-top: 5%;
+  font-size: 14px;
+}
+.p_type1 button{
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;/*圆角弧度 */
+  box-shadow: 0rpx 0rpx  6rpx 1rpx lavender;
+  border: none;
+  padding: 0;
+}
+.p_type1 image{
+  width: 280rpx;
+  height: 280rpx;
+  border-radius: 50%;/*圆角弧度 */
+}
