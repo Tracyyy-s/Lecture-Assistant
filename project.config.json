@@ -1,119 +1,131 @@
 {
-	"description": "项目配置文件",
-	"cloudfunctionRoot": "cloud/",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": false,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true,
-		"coverView": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.9.4",
-	"appid": "wxe12260b013a87043",
-	"projectname": "%E8%AE%B2%E5%BA%A7%E5%B0%8F%E5%8A%A9%E6%89%8B",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 0,
-			"list": [
-				{
-					"id": 0,
-					"name": "提问界面",
-					"pathName": "pages/ask/ask",
-					"query": "登录界面",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "登录界面",
-					"pathName": "pages/login/login",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "我的提问",
-					"pathName": "pages/myAsk/myAsk",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 3,
-					"name": "主页",
-					"pathName": "pages/homePage/homePage",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "我的讲座",
-					"pathName": "pages/join/join",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "提交讲座",
-					"pathName": "pages/addLecture/addLecture",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "反馈意见",
-					"pathName": "pages/suggest/suggest",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "关于讲座",
-					"pathName": "pages/about/about",
-					"scene": null
-				}
-			]
-		}
-	}
+  "description": "项目配置文件",
+  "cloudfunctionRoot": "cloud/",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.9.4",
+  "appid": "wxe12260b013a87043",
+  "projectname": "%E8%AE%B2%E5%BA%A7%E5%B0%8F%E5%8A%A9%E6%89%8B",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 0,
+          "name": "提问界面",
+          "pathName": "pages/ask/ask",
+          "query": "登录界面",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "登录界面",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "我的提问",
+          "pathName": "pages/myAsk/myAsk",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 3,
+          "name": "主页",
+          "pathName": "pages/homePage/homePage",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "我的讲座",
+          "pathName": "pages/join/join",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "提交讲座",
+          "pathName": "pages/addLecture/addLecture",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "反馈意见",
+          "pathName": "pages/suggest/suggest",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "关于讲座",
+          "pathName": "pages/about/about",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

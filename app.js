@@ -48,8 +48,11 @@ App({
     password: '',  //密码
     NickName: '',  //使用者昵称
     identify: '',  //使用者身份
-    appid: 'wxe12260b013a87043',
-    secret: 'bcf80248a9981edea590965d47c397d9',
+
+    //自己小程序的appid
+    appid: 'xxxxx',
+    //自己小程序的secret
+    secret: 'xxxxx',
   },
 
   //生成唯一ID
